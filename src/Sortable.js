@@ -825,7 +825,7 @@ Sortable.prototype = /** @lends Sortable.prototype */ {
 					};
 				}
 
-				let cssMatrix = `matrix(${ghostMatrix.a},${ghostMatrix.b},${ghostMatrix.c},${ghostMatrix.d},${ghostMatrix.e},${ghostMatrix.f})`;
+				let cssMatrix = `matrix3d(${ghostMatrix.a},${ghostMatrix.b},${ghostMatrix.c},${ghostMatrix.d},${ghostMatrix.e},${ghostMatrix.f})`;
 
 				css(ghostEl, 'webkitTransform', cssMatrix);
 				css(ghostEl, 'mozTransform', cssMatrix);
